@@ -2,7 +2,7 @@ import requests
 
 url = "https://fast-currency-convertor.p.rapidapi.com/api/Fetch-Currency/"
 
-querystring = {"amount": "100", "fromCurrency": "USD", "toCurrency": "AUD"}
+querystring = {"amount": "100", "fromCurrency": "USD", "toCurrency": "UZS"}
 
 headers = {
     "X-RapidAPI-Key": "f8815dad22mshce0f3b4c90be0d3p1724ffjsndf9ebcee49ad",

@@ -36,7 +36,7 @@ currencies = {
     "China": "CNY",
     "Colombia": "COP",
     "Comoros": "KMF",
-    "Congo, Democratic Republic of the": "CDF",
+    "Congo, Democratic Republic": "CDF",
     "Congo, Republic of the": "XAF",
     "Costa Rica": "CRC",
     "Croatia": "EUR",
@@ -47,8 +47,8 @@ currencies = {
     "Djibouti": "DJF",
     "Dominica": "XCD",
     "Dominican Republic": "DOP",
+    "United States": "USD",
     "Ecuador": "USD",
-    "Egypt": "EGP",
     "El Salvador": "USD",
     "Equatorial Guinea": "XAF",
     "Eritrea": "ERN",
@@ -131,7 +131,6 @@ currencies = {
     "Oman": "OMR",
     "Pakistan": "PKR",
     "Palau": "USD",
-    "Palestine": "ILS",
     "Panama": "PAB, USD",
     "Papua New Guinea": "PGK",
     "Paraguay": "PYG",
@@ -144,4 +143,6 @@ currencies = {
     "Russia": "RUB",
     "Rwanda": "RWF",
     "Saint Kitts and Nevis": "XCD",
+    "Uzbekistan": "UZS"
 }
+
