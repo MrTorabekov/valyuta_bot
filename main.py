@@ -64,13 +64,13 @@ async def amount(message: types.Message, state: FSMContext, bot: Bot):
     currency2 = data.get("currency2", "Unknown")
     amount = data.get("amount", "Unknown")
 
-    url = "http://api.exchangeratesapi.io/v1/"
+    url = "https://fast-currency-convertor.p.rapidapi.com/api/Fetch-Currency/"
 
 
     querystring = {"amount": f"{amount}", "fromCurrency": f"{currency1}", "toCurrency": f"{currency2}"}
 
     headers = {
-        "X-RapidAPI-Key": "1767eead38ef0bfe2435fd9e2ed4b43c",
+        "X-RapidAPI-Key": "f8815dad22mshce0f3b4c90be0d3p1724ffjsndf9ebcee49ad",
         "X-RapidAPI-Host": "fast-currency-convertor.p.rapidapi.com"
     }
 
@@ -83,6 +83,12 @@ Qaysi valyutga: {currency2}
 Miqdori: {amount}
 Natija: {result}
         """)
+    await message.answer("Yana valyuta almashtirishni xohlaysizmi?", reply_markup=ReplyKeyboardRemove())
+
+    # Yangi sessiyani boshlash
+    await state.clear()  # State tozalash
+    await state.set_state(Form.currency1)  # Boshidan boshlash uchun holatni yangilash
+    await message.answer("Qaysi valyutani almashtirmoqchisiz?", reply_markup=enter2)
 
 
 async def main() -> None:
